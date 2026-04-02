@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомастерская</title>
+    <style>
+        body {font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;}
+
+        nav.top-nav {background-color: #9ba7e9;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            width: 100%;}
+
+        nav.top-nav ul {list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;}
+
+        nav.top-nav ul li {display: inline;
+            margin: 0 15px;}
+
+        nav.top-nav ul li a {text-decoration: none;
+            color: white;
+            font-size: 16px;}
+
+        nav.top-nav ul li a:hover {color: #9ba7e9;}
+
+        header {background-color: #9ba7e9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;}
+
+        .product {display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;}
+
+        .product-item {text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;}
+
+        .product-item img {max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;}
+
+        .product-item h3 {margin: 0;}
+
+        .product-item p {margin: 5px 0;}
+
+        .product-item .price {color: #9ba7e9;
+            font-weight: bold;}
+
+        .product-item button {padding: 10px;
+            background-color: #9ba7e9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;}
+
+        .product-item button:hover {background-color: #9ba7e9;}
+
+        footer {background-color: #9ba7e9;
+            color: white;
+            text-align: center;
+            padding: 10px;}
+    </style>
+</head>
+<body>
+
+    <!-- Верхняя навигация -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Каталог товаров</h1>
+    </header>
+
+    <div class="product">
+        <div class="product-item">
+            <img src="тортсвадьба.jpg" alt="Торт Свадьба">
+            <h3>Торт "Свадьба"</h3>
+            <p class="price">8 999 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+        <div class="product-item">
+            <img src="торт3шок.jpg" alt="Торт 3 шоколада">
+            <h3>Торт "3 шоколада"</h3>
+            <p class="price">7 999 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+        <div class="product-item">
+            <img src="тортсладость.jpg" alt="Торт Сладость">
+            <h3>Торт "Сладость"</h3>
+            <p class="price">10 999 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Кондитерская Юлии Озеровой. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
